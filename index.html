@@ -1,178 +1,349 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Jeric Quinto | Web Developer</title>
   </head>
+
   <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Jeric</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Achivements</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-        </ul>
-        <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
+    <!-- Navbar -->
+     <nav>
+      <h1>JERIC QUINTO</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+</nav>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Jeric Quinto</div>
-          <div class="text-three">Web Dev</div>
-         
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+         src="assets/images/Picture.jpg"
+        alt="Picture"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">JERIC QUINTO</h2>
+        <p class="bio-text">
+          <h2 class="bio-title">Web Dev.</h2>
+          
+           
+        </p>
+      </div>
+</section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Hi! My name is Jeric M. Quinto, my skills is  web development, graphic design. With extensive experience in these domains, I consistently deliver top-notch results for every project. One of the key projects I spearheaded was the development of an innovative  Veterinary online appointment system This pl showcasing my proficiency in creating functional and user-friendly solutions. Whether it's crafting websites, designing or providing support in various tasks, I'm committed to delivering exceptional work that exceeds expectations. Trust me to bring your projects to life with creativity and precision!
         
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
     </section>
 
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="about.jpeg" alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">About Me</div>
-            <p>
-              Hi! My name is Jeric M. Quinto, my skill in web development, graphic design. With extensive experience in these domains, I consistently deliver top-notch results for every project. During my OJT at a lightweight solution company. One of the key projects I spearheaded was the development of an innovative  Veterinary online appointment system This pl showcasing my proficiency in creating functional and user-friendly solutions. Whether it's crafting websites, designing or providing support in various tasks, I'm committed to delivering exceptional work that exceeds expectations. Trust me to bring your projects to life with creativity and precision!
-            </p>
-            <div class="button">
-              <button>Download CV</button>
-            </div>
-            <div class="button">
-              <a href="https://www.salesforce.com/trailblazer/ls6hnxm2pdtsjgcpda"><i class="fas fa-cloud" ></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Skills section -->
     <section class="skills" id="skills">
-      <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p></p>
-            <div class="experience">
-              <div class="num"></div>
-              <div class="exp">
-                <br />
-              
-              </div>
-            </div>
-          </div>
-          <div class="boxes">
-            <div class="box">
-              <div class="topic">Web developing</div>
-              <div class="per">30%</div>
-            </div>
-            <div class="box">
-              <div class="topic">Graphic designing</div>
-              <div class="per">20%</div>
-            </div>
-            <div class="box">
-              <div class="topic">Photography</div>
-              <div class="per">60%</div>
-            </div>
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+         
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/expenseTracker.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Veterinary online appointment system</h3>
+          <p class="project-details">
+           
+          This our Capstone Project Veterinary online appointment system is a scheme-created system where customers can make online bookings. This system helps people, especially those who don’t have enough time to go on-site for the appointment;This system is ready for customers to visit 24/7 on any device from anywhere.
+
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+         
+  
+          <img
+            src="assets/images/face.jpg"
+            alt="Face Recognition system"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Facial Recognition system</h3>
+          <p class="project-details">
+            A mini-learning management system for submissions of
+            activities, quizzes, and files. This is integrated with the
+            Facial Recognition system which will serve as the
+            verification for the student's attendance within that day.
             
-          </div>
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
-
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-          <div class="title"><span>My Achievements and Certificates</span></div>
-          <div class="boxes">
-              <div class="box">
-                  <div class="icon">
-                      <i class="fas fa-desktop"></i>
-                  </div>
-                  <div class="topic">Web Development</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-              </div>
-              <div class="box">
-                  <div class="icon">
-                      <i class="fas fa-paint-brush"></i>
-                  </div>
-                  <div class="topic">Graphic Design</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-              </div>
-              <div class="box">
-                  <div class="icon">
-                      <i class="fas fa-chart-line"></i>
-                  </div>
-                  <div class="topic">Digital Marketing</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-              </div>
-              <!-- Repeat for other boxes -->
-  
-              <!-- Insert 10 images below -->
-              <div class="">
-                  <img src="c1.jpg" alt="">
-              <div>
-              <div class="">
-                  <img src="c2.jpg" alt="">
-              <div>
-              </div>
-              <div class="">
-                <img src="c3.jpg" alt="">
-
+     <!-- Projects section --> 
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Certificate</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="c1.jpg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Setting Up Computer Netwaorks</h3>
+          <p class="project-details">
       
-  <div class="">
-    <img src="c9.jpg" alt="">
-   
-</div>
-              <!-- Repeat for other images -->
-          </div>
-      </div>
-  </section>
-  
 
-   
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic"></div>
-          <p></p>
-          <div class="button">
-            <button>Let's Chat</button>
-          </div>
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/c2.jpg"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Installing and Configuring Computer  System</h3>
+          <p class="project-details">
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/c3.jpg"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Introduction in CSS</h3>
+          <p class="project-details">
+            
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+     <!-- Projects section --> 
+    <section class="projects" id="projects">
+      <h2 class="projects-title"></h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+          src="assets/images/c4.jpg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title"></h3>
+          <p class="project-details">
+      
+
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/c5.jpg"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title"></h3>
+          <p class="project-details">
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/c6.jpg"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title"></h3>
+          <p class="project-details">
+      
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
 
-   
 
-    <script src="script.js"></script>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Social accounts - Fixed to the right -->
+     <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="https://www.salesforce.com/trailblazer/ls6hnxm2pdtsjgcpda"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.salesforce.com/trailblazer/ls6hnxm2pdtsjgcpda"><i class="fas fa-cloud" ></i></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+<i class="scroll-up" id="scroll-up">
+  <img src="assets/icons/icons8-upward-arrow.gif" class="up-arrow" alt="scroll-up" />
+</i>
+    <!-- Footer section -->
+      
+      </p>
+</footer>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
